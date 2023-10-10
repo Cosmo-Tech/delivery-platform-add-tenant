@@ -38,9 +38,9 @@ terraform plan -out tfplan
 terraform apply tfplan
 ```
 
-- Once the tenant deployed, grant admin consent for the 'platform's tenant' app registration
+## 1.6. Grant authorizations to user / app
 - Add users / group in service principal associated to this app registration
-- Add permission to the Platform's tenant app registration on herself and grant admin consent too
+- Add permission to the Platform's tenant app registration on herself ('Platform.Admin') and grant admin consent
 
 Enjoy !
 
