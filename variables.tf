@@ -479,3 +479,8 @@ variable "vault_token" {
   type        = string
   description = "The token of the Vault to save current platform configuration values"
 }
+
+variable "backend_remote" {
+  type    = bool
+  default = true
+}

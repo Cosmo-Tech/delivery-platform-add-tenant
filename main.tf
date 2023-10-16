@@ -1,3 +1,15 @@
+data "terraform_remote_state" "state" {
+  count   = var.backend_remote ? 1 : 0
+  backend = "azurerm"
+  config = {
+    resource_group_name  = var.tf_resource_group_name
+    storage_account_name = var.tf_storage_account_name
+    container_name       = var.tf_container_name
+    key                  = var.tf_blob_name
+    access_key           = var.tf_access_key
+  }
+}
+
 module "cosmotech-tenant" {
   source  = "Cosmo-Tech/cosmotech-tenant/azure"
   version = "0.1.0"
