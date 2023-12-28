@@ -38,9 +38,9 @@ module "cosmotech-tenant" {
   deployment_type         = var.deployment_type
   network_adt_clientid    = var.network_adt_clientid
   network_adt_password    = var.network_adt_password
-  platform_client_id      = var.platform_tenant_object_id
+  platform_client_id      = var.platform_tenant_client_id
   platform_client_secret  = var.platform_tenant_client_secret
   platform_group_id       = var.platform_group_id
   networkadt_sp_object_id = var.networkadt_sp_object_id
-  principal_id            = var.principal_id
+  principal_id            = var.platform_tenant_object_id
 }
