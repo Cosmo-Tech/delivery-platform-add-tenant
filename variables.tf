@@ -509,13 +509,13 @@ variable "network_adt_password" {
   default     = ""
 }
 
-variable "platform_client_id" {
+variable "platform_tenant_object_id" {
   type        = string
   description = "The client id of the platform app registration"
   default     = ""
 }
 
-variable "platform_client_secret" {
+variable "platform_tenant_client_secret" {
   type        = string
   description = "The password of the platform app registration"
   default     = ""
@@ -524,5 +524,17 @@ variable "platform_client_secret" {
 variable "platform_group_id" {
   type        = string
   description = "The group id of the platform app registration"
+  default     = ""
+}
+
+variable "networkadt_sp_object_id" {
+  type        = string
+  description = "The object id of the network adt service principal"
+  default     = ""
+}
+
+variable "principal_id" {
+  type        = string
+  description = "The principal id of the platform app registration"
   default     = ""
 }
