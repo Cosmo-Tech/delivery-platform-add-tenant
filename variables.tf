@@ -538,3 +538,8 @@ variable "principal_id" {
   description = "The principal id of the platform app registration"
   default     = ""
 }
+
+variable "platform_tenant_client_id" {
+  type        = string
+  default     = ""
+}
