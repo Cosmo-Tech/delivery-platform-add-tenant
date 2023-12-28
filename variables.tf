@@ -520,3 +520,9 @@ variable "platform_client_secret" {
   description = "The password of the platform app registration"
   default     = ""
 }
+
+variable "platform_group_id" {
+  type        = string
+  description = "The group id of the platform app registration"
+  default     = ""
+}

@@ -40,4 +40,5 @@ module "cosmotech-tenant" {
   network_adt_password    = var.network_adt_password
   platform_client_id      = var.platform_client_id
   platform_client_secret  = var.platform_client_secret
+  platform_group_id       = var.platform_group_id
 }
