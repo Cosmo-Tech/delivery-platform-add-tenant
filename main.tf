@@ -36,4 +36,8 @@ module "cosmotech-tenant" {
   vault_addr              = var.vault_addr
   vault_token             = var.vault_token
   deployment_type         = var.deployment_type
+  network_adt_clientid    = var.network_adt_clientid
+  network_adt_password    = var.network_adt_password
+  platform_client_id      = var.platform_client_id
+  platform_client_secret  = var.platform_client_secret
 }
