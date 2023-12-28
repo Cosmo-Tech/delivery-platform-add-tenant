@@ -12,7 +12,7 @@ data "terraform_remote_state" "state" {
 
 module "cosmotech-tenant" {
   source  = "Cosmo-Tech/cosmotech-tenant/azure"
-  version = "0.2.6"
+  version = "0.2.7"
 
   subscription_id         = var.subscription_id
   tenant_id               = var.tenant_id
@@ -43,4 +43,5 @@ module "cosmotech-tenant" {
   platform_group_id       = var.platform_group_id
   networkadt_sp_object_id = var.networkadt_sp_object_id
   principal_id            = var.platform_tenant_object_id
+  platform_sp_object_id   = var.principal_id
 }
