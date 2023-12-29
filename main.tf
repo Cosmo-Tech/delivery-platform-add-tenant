@@ -44,4 +44,5 @@ module "cosmotech-tenant" {
   networkadt_sp_object_id = var.networkadt_sp_object_id
   principal_id            = var.platform_tenant_object_id
   platform_sp_object_id   = var.principal_id
+  location                = var.location
 }
