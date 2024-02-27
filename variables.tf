@@ -363,7 +363,7 @@ variable "monitoring_namespace" {
 
 variable "chart_package_version" {
   type        = string
-  default     = "3.0.3-test"
+  default     = "3.0.2"
   description = "The version of the Cosmo Tech API chart to deploy"
 }
 
