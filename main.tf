@@ -12,7 +12,7 @@ data "terraform_remote_state" "state" {
 
 module "cosmotech-tenant" {
   source  = "Cosmo-Tech/cosmotech-tenant/azure"
-  version = "0.2.8"
+  version = "0.2.10"
 
   subscription_id         = var.subscription_id
   tenant_id               = var.tenant_id
@@ -36,13 +36,8 @@ module "cosmotech-tenant" {
   vault_addr              = var.vault_addr
   vault_token             = var.vault_token
   deployment_type         = var.deployment_type
-  network_adt_clientid    = var.network_adt_clientid
-  network_adt_password    = var.network_adt_password
-  platform_client_id      = var.platform_tenant_client_id
-  platform_client_secret  = var.platform_tenant_client_secret
   platform_group_id       = var.platform_group_id
   networkadt_sp_object_id = var.networkadt_sp_object_id
   principal_id            = var.platform_tenant_object_id
-  platform_sp_object_id   = var.principal_id
   location                = var.location
 }
