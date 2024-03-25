@@ -73,7 +73,7 @@ variable "tenant_resource_group" {
 
 variable "kubernetes_azurefile_storage_class_sku" {
   type    = string
-  default = "Premium_LRS"
+  default = "Standard_LRS"
 }
 
 variable "tenant_virtual_network_address_prefix" {
@@ -623,7 +623,6 @@ variable "tenant_sp_object_id" {
 variable "network_sp_object_id" {
   description = "The object id of the network service principal"
   type        = string
-  default     = ""
 }
 
 variable "kubernetes_azurefile_storage_tags" {
@@ -704,4 +703,8 @@ variable "tls_certificate_custom_key" {
 variable "backend_remote" {
   type    = bool
   default = false
+}
+
+variable "common_platform_object_id" {
+  type = string
 }

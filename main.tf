@@ -12,39 +12,41 @@ data "terraform_remote_state" "state" {
 
 module "cosmotech-tenant" {
   source  = "Cosmo-Tech/cosmotech-tenant/azure"
-  version = "1.1.5"
+  version = "1.1.7"
 
   # Azure tenant prerequisites
-  tenant_id                         = var.tenant_id
-  client_id                         = var.client_id
-  client_secret                     = var.client_secret
-  platform_url                      = var.platform_url
-  identifier_uri                    = var.identifier_uri
-  project_stage                     = var.project_stage
-  project_name                      = var.project_name
-  owner_list                        = var.owner_list
-  audience                          = var.audience
-  webapp_url                        = var.webapp_url
-  location                          = var.location
-  tenant_resource_group             = var.tenant_resource_group
-  common_resource_group             = var.common_resource_group
-  dns_record                        = var.dns_record
-  dns_zone_name                     = var.dns_zone_name
-  dns_zone_rg                       = var.dns_zone_rg
-  api_version_path                  = var.api_version_path
-  customer_name                     = var.customer_name
-  user_app_role                     = var.user_app_role
-  image_path                        = var.image_path
-  create_restish                    = var.create_restish
-  create_powerbi                    = var.create_powerbi
-  create_secrets                    = var.create_secrets
-  create_webapp                     = var.create_webapp
-  create_babylon                    = var.create_babylon
-  cost_center                       = var.cost_center
-  publicip_resource_group           = var.publicip_resource_group
-  vnet_name                         = var.vnet_name
-  public_ip_name                    = var.public_ip_name
-  kubernetes_azurefile_storage_tags = var.kubernetes_azurefile_storage_tags
+  tenant_id                              = var.tenant_id
+  client_id                              = var.client_id
+  client_secret                          = var.client_secret
+  platform_url                           = var.platform_url
+  identifier_uri                         = var.identifier_uri
+  project_stage                          = var.project_stage
+  project_name                           = var.project_name
+  owner_list                             = var.owner_list
+  audience                               = var.audience
+  webapp_url                             = var.webapp_url
+  location                               = var.location
+  tenant_resource_group                  = var.tenant_resource_group
+  common_resource_group                  = var.common_resource_group
+  dns_record                             = var.dns_record
+  dns_zone_name                          = var.dns_zone_name
+  dns_zone_rg                            = var.dns_zone_rg
+  api_version_path                       = var.api_version_path
+  customer_name                          = var.customer_name
+  user_app_role                          = var.user_app_role
+  image_path                             = var.image_path
+  create_restish                         = var.create_restish
+  create_powerbi                         = var.create_powerbi
+  create_secrets                         = var.create_secrets
+  create_webapp                          = var.create_webapp
+  create_babylon                         = var.create_babylon
+  cost_center                            = var.cost_center
+  publicip_resource_group                = var.publicip_resource_group
+  vnet_name                              = var.vnet_name
+  public_ip_name                         = var.public_ip_name
+  kubernetes_azurefile_storage_tags      = var.kubernetes_azurefile_storage_tags
+  kubernetes_azurefile_storage_class_sku = var.kubernetes_azurefile_storage_class_sku
+
 
   # Azure tenant resources
   deployment_type                              = var.deployment_type
@@ -59,6 +61,7 @@ module "cosmotech-tenant" {
   create_backup                                = var.create_backup
   create_cosmosdb                              = var.create_cosmosdb
   create_adx                                   = var.create_adx
+  common_platform_object_id                    = var.common_platform_object_id
 
   blob_privatedns_zonename     = var.blob_privatedns_zonename
   queue_privatedns_zonename    = var.queue_privatedns_zonename
