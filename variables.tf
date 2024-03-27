@@ -334,7 +334,7 @@ variable "create_dnsrecord" {
 variable "api_version_path" {
   description = "The API version path"
   type        = string
-  default     = "v3"
+  default     = "v3-1"
 }
 
 variable "cosmotech_api_version" {
@@ -430,7 +430,7 @@ variable "monitoring_namespace" {
 variable "chart_package_version" {
   description = "The version of the Cosmo Tech API chart to deploy"
   type        = string
-  default     = "3.1.1"
+  default     = "3.1.2"
 }
 
 variable "network_client_id" {
