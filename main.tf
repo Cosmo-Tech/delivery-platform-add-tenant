@@ -61,6 +61,7 @@ module "cosmotech-tenant" {
   create_backup                                = var.create_backup
   create_cosmosdb                              = var.create_cosmosdb
   create_adx                                   = var.create_adx
+  create_eventhub                              = var.create_eventhub
   common_platform_object_id                    = var.common_platform_object_id
 
   blob_privatedns_zonename     = var.blob_privatedns_zonename
@@ -112,4 +113,5 @@ module "cosmotech-tenant" {
   network_client_secret              = var.network_client_secret
   tenant_client_id                   = var.tenant_client_id
   tenant_client_secret               = var.tenant_client_secret
+  create_rabbitmq                    = var.create_rabbitmq
 }
