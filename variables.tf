@@ -393,13 +393,13 @@ variable "kubernetes_version" {
 }
 
 variable "create_cosmosdb" {
-  description = "Weither to create CosmosDB (only for API version < 2.4)"
+  description = "Whether to create CosmosDB (only for API version < 2.4)"
   type        = bool
   default     = false
 }
 
 variable "create_adx" {
-  description = "Weither to create Azure digital explorer"
+  description = "Whether to create Azure digital explorer"
   type        = bool
   default     = true
 }
@@ -417,7 +417,7 @@ variable "cost_center" {
 }
 
 variable "create_backup" {
-  description = "Weither to create Azure backup vault along with the managed disk"
+  description = "Whether to create Azure backup vault along with the managed disk"
   type        = bool
   default     = false
 }
