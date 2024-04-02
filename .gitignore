@@ -1,4 +1,5 @@
 .terraform*
 *.sh
-tf*lan
+*plan*
 *.tfstate
+*.tfstate.*
