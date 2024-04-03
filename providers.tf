@@ -25,7 +25,7 @@ terraform {
       version = "3.4.0"
     }
   }
-  backend "local" {
+  backend "azurerm" {
   }
   required_version = ">= 1.3.9"
 }
