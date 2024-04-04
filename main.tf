@@ -79,6 +79,7 @@ module "cosmotech-tenant" {
   tenant_sp_object_id = var.tenant_sp_object_id
 
   # Vault entries
+  create_vault_entries        = var.create_vault_entries
   kubernetes_tenant_namespace = var.kubernetes_tenant_namespace
   platform_name               = var.platform_name
   organization_name           = var.organization_name
