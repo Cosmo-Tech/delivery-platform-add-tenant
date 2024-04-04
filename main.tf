@@ -12,7 +12,7 @@ data "terraform_remote_state" "state" {
 
 module "cosmotech-tenant" {
   source  = "Cosmo-Tech/cosmotech-tenant/azure"
-  version = "1.1.10"
+  version = "1.1.11"
 
   # Azure tenant prerequisites
   tenant_id                              = var.tenant_id
@@ -80,6 +80,7 @@ module "cosmotech-tenant" {
 
   # Vault entries
   kubernetes_tenant_namespace = var.kubernetes_tenant_namespace
+  platform_name               = var.platform_name
   organization_name           = var.organization_name
   vault_addr                  = var.vault_addr
   vault_token                 = var.vault_token

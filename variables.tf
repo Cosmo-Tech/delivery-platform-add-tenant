@@ -604,6 +604,10 @@ variable "vault_token" {
   default     = ""
 }
 
+variable "platform_name" {
+  type = string
+}
+
 variable "tenant_group_id" {
   description = "The object id of the platform group"
   type        = string
