@@ -85,6 +85,11 @@ module "cosmotech-tenant" {
   organization_name           = var.organization_name
   vault_addr                  = var.vault_addr
   vault_token                 = var.vault_token
+  tf_resource_group_name      = var.tf_resource_group_name
+  tf_storage_account_name     = var.tf_storage_account_name
+  tf_container_name           = var.tf_container_name
+  tf_blob_name_tenant         = var.tf_blob_name_tenant
+  tf_access_key               = var.tf_access_key
 
   # Platform tenant resources
   api_dns_name                       = var.api_dns_name
