@@ -12,7 +12,7 @@ data "terraform_remote_state" "state" {
 
 module "cosmotech-tenant" {
   source  = "Cosmo-Tech/cosmotech-tenant/azure"
-  version = "1.2.0"
+  version = "1.2.1"
 
   # Azure tenant prerequisites
   tenant_id                              = var.tenant_id
