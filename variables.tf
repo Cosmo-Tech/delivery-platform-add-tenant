@@ -724,3 +724,18 @@ variable "backend_remote" {
 variable "common_platform_object_id" {
   type = string
 }
+
+variable "list_apikey_allowed" {
+  type = list(object({
+    name = string
+    apiKey = string
+    associatedRole = string
+    securedUris = list(string)
+  }))
+  default = [ {
+      name = ""
+      apiKey = ""
+      associatedRole = ""
+      securedUris = []
+  } ]
+}

@@ -114,4 +114,5 @@ module "cosmotech-tenant" {
   tenant_client_id                   = var.tenant_client_id
   tenant_client_secret               = var.tenant_client_secret
   create_rabbitmq                    = var.create_rabbitmq
+  list_apikey_allowed                = var.list_apikey_allowed
 }
