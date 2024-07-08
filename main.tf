@@ -1,6 +1,6 @@
 data "terraform_remote_state" "state" {
   count   = var.backend_remote ? 1 : 0
-  backend = "azurerm"
+  backend = "local"
   config = {
     resource_group_name  = var.tf_resource_group_name
     storage_account_name = var.tf_storage_account_name
@@ -12,7 +12,7 @@ data "terraform_remote_state" "state" {
 
 module "cosmotech-tenant" {
   source  = "Cosmo-Tech/cosmotech-tenant/azure"
-  version = "1.2.2"
+  version = "1.2.4"
 
   # Azure tenant prerequisites
   tenant_id                              = var.tenant_id
